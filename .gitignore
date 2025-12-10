@@ -1,0 +1,37 @@
+# 创建 .gitignore 文件
+cat > .gitignore << 'EOF'
+# 数据库文件（不要上传）
+*.db
+*.sqlite3
+address_book.db
+
+# Python缓存文件
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 虚拟环境
+venv/
+.env
+.venv/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# IDE配置文件
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 上传的头像（可选，如果想保留就注释掉）
+# static/avatars/*
+
+# 日志文件
+*.log
+
+# 临时文件
+*.tmp
+temp/
+EOF
